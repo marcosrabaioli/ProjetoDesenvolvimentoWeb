@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog AMF</title>
+</head>
+<body>
+
+<div>
+    <h1><a href="">Blog AMF</a></h1>
+</div>
+
+{% for post in posts %}
+<div>
+    <p>{{ post.data_publicacao }}</p>
+    <h2><a href="">{{ post.titulo }}</a></h2>
+    <p>{{ post.texto|linebreaksbr }}</p>
+</div>
+{% endfor %}
+
+</body>
+</html>
